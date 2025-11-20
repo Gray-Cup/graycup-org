@@ -117,39 +117,23 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Only ever show a loading state on /sign-in while we decide if we should show Dashboard */}
-          {!ready && pathname === "/sign-in" ? (
-            <Button
-              variant="secondary"
-              size="minor"
-              className="opacity-70 pointer-events-none"
-            >
-              Loading…
-            </Button>
-          ) : showDashboardCTA ? (
-            <a href="https://app.graycup.org">
-              <Button variant="black" size="minor">
-                Dashboard
-              </Button>
-            </a>
-          ) : (
             <>
               {/* Internal route: use Link + asChild so it doesn't flash a reload */}
-              <Link href="/play-with-us" className="inline-block">
+              <Link href="/contact" className="inline-block">
                 <Button variant="lightgray" size="sm">
-                  Play with Us
+                  Email Us
                 </Button>
               </Link>
 
               {/* Sign-in always visible outside the app */}
               <a
-                href="https://app.graycup.org/"
+                href="https://graycup.in/"
                 target="_blank"
                 rel="dofollow noopener"
                 id="sign-in-link"
               >
                 <Button variant="blue" size="sm">
-                  Sign In{" "}
+                  Visit Store{" "}
                   <kbd
                     className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer"
                     onClick={(e) => {
@@ -162,7 +146,6 @@ export function Navbar() {
                 </Button>
               </a>
             </>
-          )}
         </div>
       </div>
     </header>
