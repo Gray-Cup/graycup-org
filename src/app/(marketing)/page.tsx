@@ -101,7 +101,7 @@ export default function Home() {
           <div className="hidden md:block">
             <PRIssues />
           </div>
-          <a href="https://discord.gg/rDDqA83eGz" target="_blank">
+          <a href="https://discord.gg/gpRxmW63JW" target="_blank">
             <Button variant="gray">Join Our Discord</Button>
           </a>
         </div>

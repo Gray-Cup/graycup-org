@@ -36,7 +36,7 @@ export default function ContactPage() {
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="https://discord.gg/RHj9pcy2Pp"
+              href="https://discord.gg/gpRxmW63JW"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"

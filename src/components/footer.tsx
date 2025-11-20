@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="space-y-2 text-md">
               <li>
                 <Link
-                  href="https://discord.gg/RHj9pcy2Pp"
+                  href="https://discord.gg/gpRxmW63JW"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
