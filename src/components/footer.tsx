@@ -16,15 +16,15 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-lg mb-4">Product</h4>
-            <ul className="space-y-2 text-md">
+            <h4 className="font-semibold text-md mb-4">Main</h4>
+            <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="https://discord.gg/gpRxmW63JW"
+                  href="/contact"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Discord Server
+                  Contact Us
                 </Link>
               </li>
               <li>
