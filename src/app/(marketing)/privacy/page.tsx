@@ -19,9 +19,9 @@ export default function PrivacyPolicy() {
           Our Commitment to Privacy
         </h2>
         <p className="mb-4">
-          At Gray Cup, we take your privacy seriously. This policy describes what
-          personal information we collect and how we use it. Our primary goal is
-          to provide a secure and trustworthy experience.
+          At Gray Cup, we take your privacy seriously. This policy describes
+          what personal information we collect and how we use it. Our primary
+          goal is to provide a secure and trustworthy experience.
         </p>
 
         <h2 className="text-xl font-semibold text-neutral-800 mt-8 mb-4">

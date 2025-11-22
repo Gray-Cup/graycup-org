@@ -60,7 +60,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-              <Link
+                <Link
                   href="https://discord.gg/gpRxmW63JW"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
@@ -69,7 +69,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-              <Link
+                <Link
                   href="https://cal.com/arjunaditya/30min?user=arjunaditya"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"

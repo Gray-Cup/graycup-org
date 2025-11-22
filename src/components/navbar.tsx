@@ -86,7 +86,9 @@ export function Navbar() {
               width={45}
               height={45}
             />
-            <p className="font-semibold text-neutral-900 text-xl tracking-tight">Gray Cup</p>
+            <p className="font-semibold text-neutral-900 text-xl tracking-tight">
+              Gray Cup
+            </p>
           </Link>
           <nav className="hidden font-medium text-md md:flex pl-3 gap-1">
             <Link
@@ -112,7 +114,7 @@ export function Navbar() {
               href="/social-responsibility"
               className="circular rounded-md px-3 py-2 text-neutral-800"
             >
-            Social Responsibility
+              Social Responsibility
             </Link>
             <Link
               href="/about"
@@ -130,35 +132,35 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-            <>
-              {/* Internal route: use Link + asChild so it doesn't flash a reload */}
-              <Link href="/contact" className="inline-block">
-                <Button variant="lightgray" size="sm">
-                  Email Us
-                </Button>
-              </Link>
+          <>
+            {/* Internal route: use Link + asChild so it doesn't flash a reload */}
+            <Link href="/contact" className="inline-block">
+              <Button variant="lightgray" size="sm">
+                Email Us
+              </Button>
+            </Link>
 
-              {/* Sign-in always visible outside the app */}
-              <a
-                href="https://graycup.in/"
-                target="_blank"
-                rel="dofollow noopener"
-                id="sign-in-link"
-              >
-                <Button variant="blue" size="sm">
-                  Visit Store{" "}
-                  <kbd
-                    className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      document.getElementById("sign-in-link")?.click();
-                    }}
-                  >
-                    B
-                  </kbd>
-                </Button>
-              </a>
-            </>
+            {/* Sign-in always visible outside the app */}
+            <a
+              href="https://graycup.in/"
+              target="_blank"
+              rel="dofollow noopener"
+              id="sign-in-link"
+            >
+              <Button variant="blue" size="sm">
+                Visit Store{" "}
+                <kbd
+                  className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    document.getElementById("sign-in-link")?.click();
+                  }}
+                >
+                  B
+                </kbd>
+              </Button>
+            </a>
+          </>
         </div>
       </div>
     </header>

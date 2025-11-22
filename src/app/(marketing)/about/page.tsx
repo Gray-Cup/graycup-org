@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -151,10 +152,10 @@ export default function PricingPage() {
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-semibold text-black mb-4">
-            Simple, Transparent Pricing
+            About Gray Cup
           </h1>
           <p className="text-lg text-muted-foreground">
-            Choose the plan that fits your team size and needs
+            What are we? Who Started this? Started why?
           </p>
         </div>
 
@@ -285,26 +286,32 @@ export default function PricingPage() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto mt-10">
-          {/* Wrapper must be relative so overlay positions correctly */}
-          <div className="relative">
-            {/* Framed container can be overflow-hidden now; corners stay clean */}
-            <div
-              ref={frameRef}
-              className="rounded-2xl max-md:max-w-sm max-md:mx-auto border border-gray-200 bg-white overflow-hidden"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200">
-                {tiers.map((t) => {
-                  return (
-                    <div key={t.name} className="relative">
-                      <PricingCard tier={t} />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+        <h2 className="text-2xl md:text-3xl font-medium text-neutral-800 my-4">
+          Notable People
+        </h2>
+        <div className="grid grid-cols-4">
+          <div className="flex flex-col">
+            <Image
+              src="/arjun.png"
+              alt="arjun profile photo"
+              height="200"
+              width="200"
+            />
+            <p className="text-lg font-medium py-2 bg-neutral-500">
+              Arjun Aditya
+            </p>
           </div>
-          {/* end wrapper */}
+          <div>
+            <Image
+              src="/arjun.png"
+              alt="arjun profile photo"
+              height="200"
+              width="200"
+            />
+            <p className="text-lg font-medium py-2 bg-neutral-500">
+              Arjun Aditya
+            </p>
+          </div>
         </div>
       </div>
     </div>

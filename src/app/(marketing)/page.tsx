@@ -83,9 +83,9 @@ export default function Home() {
 
         <div className="my-20 flex flex-col md:items-center px-6 py-10 md:py-20 bg-neutral-50 md:grid md:grid-cols-[70%_30%]">
           <div>
-                      <div className="block md:hidden max-md:pb-5">
-            <PRIssues />
-          </div>
+            <div className="block md:hidden max-md:pb-5">
+              <PRIssues />
+            </div>
             <h2 className="text-2xl sm:text-5xl font-medium text-neutral-900 mb-6 font-instrument-sans">
               Gray Cup Narrative
             </h2>

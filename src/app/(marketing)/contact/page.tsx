@@ -41,9 +41,7 @@ function PricingCard({
             <div className="flex w-full flex-col items-start gap-4 pb-4 px-6">
               <div className="mb-6 flex flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <p className="text-sm text-neutral-700">
-                    {tier.description}
-                  </p>
+                  <p className="text-sm text-neutral-700">{tier.description}</p>
                 </div>
               </div>
               <Button
@@ -59,8 +57,7 @@ function PricingCard({
             <ul className="mt-4 flex flex-col gap-4 px-6 pb-4 text-sm">
               {tier.features.map((f) => (
                 <li key={f} className="flex items-start gap-3">
-                  #
-                  <span>{f}</span>
+                  #<span>{f}</span>
                 </li>
               ))}
             </ul>
@@ -80,35 +77,27 @@ const tiers: Tier[] = [
     description: "We usually respond within 48 hours.",
     cta: "Send Mail",
     ctaVariant: "blue",
-    features: [
-      "office@graycup.org",
-    ],
+    features: ["office@graycup.org"],
   },
   {
     name: "Legal & Compliance",
     description: "We usually respond within 48 hours.",
     cta: "Send Mail",
     ctaVariant: "red",
-    features: [
-      "legal@graycup.org",
-    ],
+    features: ["legal@graycup.org"],
   },
   {
     name: "Marketing & PR",
     description: "We usually respond within 48 hours.",
     cta: "Send Mail",
-    features: [
-      "marketing@graycup.org",
-    ],
+    features: ["marketing@graycup.org"],
   },
   {
     name: "Call Us",
     description: "If we miss your call, we'll call you back.",
     cta: "Call Now",
     ctaVariant: "blue",
-    features: [
-      "+91 000-work-in-progress",
-    ],
+    features: ["+91 000-work-in-progress"],
   },
 ];
 
@@ -124,8 +113,10 @@ export default function PricingPage() {
             Contact Gray Cup
           </h1>
           <p className="text-lg text-muted-foreground">
-          Have a question or you want to do business with Gray Cup? There is always a way to reach us.
-          <br />Your message matters. 
+            Have a question or you want to do business with Gray Cup? There is
+            always a way to reach us.
+            <br />
+            Your message matters.
           </p>
         </div>
 
@@ -133,20 +124,21 @@ export default function PricingPage() {
           <div className="max-w-sm w-full ">
             <Card className="p-0 border border-gray-200 rounded-2xl bg-white">
               <div className="flex flex-col ">
-              <CardHeader className="pt-4">
-                <CardTitle className="text-lg font-semibold">Sales & Purchases</CardTitle>
+                <CardHeader className="pt-4">
+                  <CardTitle className="text-lg font-semibold">
+                    Sales & Purchases
+                  </CardTitle>
                 </CardHeader>
-
 
                 <CardContent className="p-0">
                   <div className="flex w-full flex-col items-start gap-4 px-6 pb-4">
-                  <div className="mb-6 flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <p className="text-sm text-neutral-700">
-                  We usually respond within 48 hours.
-                  </p>
-                </div>
-              </div>
+                    <div className="mb-6 flex flex-col gap-2">
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm text-neutral-700">
+                          We usually respond within 48 hours.
+                        </p>
+                      </div>
+                    </div>
                     <Button
                       className="w-full h-10 rounded-lg"
                       variant="lightgray"
@@ -168,30 +160,34 @@ export default function PricingPage() {
             </Card>
           </div>
           <div className="flex-col sm:flex-row flex-wrap hidden lg:flex items-center py-4 gap-4 justify-center">
-            <Image src="/coffee-beans.webp" draggable="false" alt="coffee beans" width="280" height="200" />
+            <Image
+              src="/coffee-beans.webp"
+              draggable="false"
+              alt="coffee beans"
+              width="280"
+              height="200"
+            />
           </div>
 
           <div className="max-w-sm w-full ">
             <Card className="p-0 border border-gray-200 rounded-2xl bg-white">
               <div className="flex flex-col ">
-              <CardHeader className="pt-4">
-                <CardTitle className="text-lg font-semibold">Schedule Zoom Meeting</CardTitle>
+                <CardHeader className="pt-4">
+                  <CardTitle className="text-lg font-semibold">
+                    Schedule Zoom Meeting
+                  </CardTitle>
                 </CardHeader>
-
 
                 <CardContent className="p-0">
                   <div className="flex w-full flex-col items-start gap-4 px-6 pb-4">
-                  <div className="mb-6 flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <p className="text-sm text-neutral-700">
-                  Arjun will be attending this meeting.
-                  </p>
-                </div>
-              </div>
-                    <Button
-                      className="w-full h-10 rounded-lg"
-                      variant="gray"
-                    >
+                    <div className="mb-6 flex flex-col gap-2">
+                      <div className="flex items-center gap-2">
+                        <p className="text-sm text-neutral-700">
+                          Arjun will be attending this meeting.
+                        </p>
+                      </div>
+                    </div>
+                    <Button className="w-full h-10 rounded-lg" variant="gray">
                       Schedule
                     </Button>
                   </div>
@@ -210,11 +206,23 @@ export default function PricingPage() {
           </div>
         </div>
         <div className="flex justify-between py-4">
-        <div className="flex-col sm:flex-row flex-wrap hidden lg:flex items-center gap-4 justify-start">
-            <Image src="/tea-leaves.svg" draggable="false" alt="coffee beans" width="160" height="160" />
+          <div className="flex-col sm:flex-row flex-wrap hidden lg:flex items-center gap-4 justify-start">
+            <Image
+              src="/tea-leaves.svg"
+              draggable="false"
+              alt="coffee beans"
+              width="160"
+              height="160"
+            />
           </div>
           <div className="flex-col sm:flex-row flex-wrap hidden lg:flex items-center gap-4 justify-end">
-            <Image src="/tea-leaves.svg" draggable="false" alt="coffee beans" width="160" height="160" />
+            <Image
+              src="/tea-leaves.svg"
+              draggable="false"
+              alt="coffee beans"
+              width="160"
+              height="160"
+            />
           </div>
         </div>
         <div className="max-w-6xl mx-auto mt-10">
