@@ -72,9 +72,9 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <CustomerHero />
-          </div>
+          </div> */}
         </div>
 
         <div className="my-20 py-20 bg-neutral-100">
