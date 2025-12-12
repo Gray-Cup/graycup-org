@@ -12,7 +12,8 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
+import { FaGithub, FaLinkedin, FaGlobeAsia } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 type Tier = {
   name: string;
   price: string;
@@ -290,16 +291,34 @@ export default function PricingPage() {
           Notable People
         </h2>
         <div className="grid grid-cols-4 gap-4 my-10">
-          <div className="flex flex-col">
+          <div className="flex flex-col border border-gray-200 rounded-2xl p-3">
             <Image
               src="/arjun.png"
+              className="rounded-sm"
               alt="arjun profile photo"
               height="200"
               width="200"
             />
-            <p className="text-lg max-w-fit font-medium py-2 ">
-              Arjun Aditya - Founder
+            <p className="text-lg max-w-fit font-medium mt-3">
+              Arjun Aditya (Director)
             </p>
+            <p className="text-sm text-muted-foreground mt-0.5 mb-2">
+             A Homo Sapien who loves nature, code and design.
+            </p>
+            <div className="flex items-center gap-3">
+              <Link className="opacity-75 hover:opacity-100 transition-opacity" target="_blank" href="https://arjunaditya.xyz">
+                <FaGlobeAsia size={18} />
+              </Link>
+              <Link className="opacity-75 hover:opacity-100 transition-opacity" target="_blank" href="https://github.com/nermalcat69">
+                <FaGithub size={18} />
+              </Link>
+              <Link className="opacity-75 hover:opacity-100 transition-opacity" target="_blank" href="https://www.linkedin.com/in/nermalcat69/">
+                <FaLinkedin size={18} />
+              </Link>
+              <Link className="opacity-75 hover:opacity-100 transition-opacity" target="_blank" href="https://x.com/arjunaditya_">
+                <FaXTwitter size={18} />
+              </Link>
+            </div>
           </div>
           {/* <div>
             <Image
