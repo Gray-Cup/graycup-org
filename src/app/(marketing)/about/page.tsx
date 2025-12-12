@@ -298,20 +298,20 @@ export default function PricingPage() {
               width="200"
             />
             <p className="text-lg max-w-fit font-medium py-2 ">
-              Arjun Aditya
+              Arjun Aditya - Founder
             </p>
           </div>
-          <div>
+          {/* <div>
             <Image
-              src="/arjun.png"
+              src="/anju.png"
               alt="arjun profile photo"
               height="200"
               width="200"
             />
-            <p className="text-lg font-medium py-2 bg-neutral-500">
-              Arjun Aditya
+            <p className="text-lg font-medium py-2">
+              Anju Lata
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
