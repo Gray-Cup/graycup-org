@@ -90,7 +90,7 @@ export function Navbar() {
               Gray Cup
             </p>
           </Link>
-          <nav className="hidden font-medium text-md md:flex pl-3 gap-1">
+          <nav className=" font-medium text-sm max-sm:hidden flex pl-3 gap-1">
             <Link
               href="/pricing"
               className="circular rounded-md px-3 py-2 text-neutral-800"
@@ -134,7 +134,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <>
             {/* Internal route: use Link + asChild so it doesn't flash a reload */}
-            <Link href="/contact" className="inline-block">
+            <Link href="/contact" className="inline-block max-sm:hidden">
               <Button variant="lightgray" size="sm">
                 Email Us
               </Button>

@@ -16,6 +16,7 @@ import {
   PRIssues,
 } from "@/components/svgs";
 import { CustomerHero } from "@/components/svgs/customer-hero";
+import Image from "next/image";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -62,9 +63,9 @@ export default function Home() {
 
             <div className="flex relative mt-10 flex-col max:smml-4 ">
               <div>
-                <a href="https://app.graycup.org" target="_blank">
+                <a href="/contact" target="_blank">
                   <Button variant="blue" size="lg" className="">
-                    Get started
+                    Contact Us
                   </Button>
                 </a>
               </div>
@@ -72,9 +73,9 @@ export default function Home() {
           </div>
 
           {/* Right Column */}
-          {/* <div className="hidden lg:block">
-            <CustomerHero />
-          </div> */}
+          <div className="hidden lg:block">
+            <Image src="/hero-side.png" alt="coffee beans" width={500} height={500} />
+          </div>
         </div>
 
         <div className="my-20 py-20 bg-neutral-100">
