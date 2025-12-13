@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <div>
     <div className="mx-auto px-4 lg:px-6 h-auto my-10">
-      <div className="md:min-h-screen pt-10 pb-20 md:pb-0 flex flex-col justify-center">
+      <div className="md:min-h-screen pt-10 pb-20 max-w-6xl mx-auto md:pb-0 flex flex-col justify-center">
         <div className="grid grid-cols-1 md:grid-cols-[70%_30%] gap-6 items-center">
           {/* Left Column */}
           <div>
@@ -54,7 +54,7 @@ export default function Home() {
               <span className="mb-4 sm:ml-0.5 text-sm font-medium uppercase text-neutral-500">
                 We Support Sustainability
               </span>
-              <h1 className="relative text-black text-3xl sm:text-5xl lg:text-6xl font-medium sm:leading-[60px] lg:leading-[77px]">
+              <h1 className="relative text-black text-3xl sm:text-4xl lg:text-5xl font-medium sm:leading-[60px] ">
                 Tea, Coffee,
                 <br />
                 and <span>Liquid</span>.
@@ -96,8 +96,8 @@ export default function Home() {
               alt="coffee beans"
               className="rotate-40 "
               draggable="false"
-              width={300}
-              height={300}
+              width={220}
+              height={220}
             />
           </div>
         </div>

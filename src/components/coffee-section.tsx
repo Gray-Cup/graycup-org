@@ -3,7 +3,7 @@ import Image from "next/image";
 export function CoffeeSection() {
   return (
     <div className="px-0 lg:px-8 pb-8 lg:pb-20">
-      <div className="flex flex-row justify-center md:justify-start ">
+      <div className="flex flex-row justify-center md:justify-start xl:pl-10">
         <div className="flex flex-row rounded-none sm:rounded-l-2xl bg-orange-200">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Coffee Beans <br /> from Different <br /> Regions
@@ -32,7 +32,7 @@ export function CoffeeSection() {
         />
       </div>
 
-      <div className="flex justify-center sm:justify-end z-30">
+      <div className="flex justify-center sm:justify-end xl:justify-center z-30">
         <Image
           src="/three-beans.webp"
           alt="beans"

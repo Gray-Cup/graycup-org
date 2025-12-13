@@ -11,11 +11,11 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/contact"
+                  href="/about"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Contact Us
+                  About
                 </Link>
               </li>
               <li>
@@ -24,13 +24,23 @@ export default function Footer() {
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Pricing
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-md mb-2">Socials</h4>
+            <div className="flex flex-row gap-14">
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -60,6 +70,27 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link
+                  href="https://instagram.com/thegraycup"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://github.com/Gray-Cup"
+                  target="_blank"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Reddit
+                </Link>
+              </li>
+            </ul>
+            </div>
           </div>
           {/* <div>
               <h4 className="font-medium mb-4">Information</h4>

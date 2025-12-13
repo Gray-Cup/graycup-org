@@ -27,7 +27,6 @@ type Tier = {
 
 /* ---------- Page ---------- */
 export default function AboutPage() {
-  const frameRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div className="min-h-screen py-20 px-4 lg:px-6">
