@@ -3,44 +3,30 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
-type WhoAmI =
-  | { authenticated: false }
-  | {
-      authenticated: true;
-      user: { id: string; name?: string | null; image?: string | null };
-    };
-
 export function Navbar() {
-  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Default to "not ready" only on /sign-in (where we might swap to Dashboard).
-  const [ready, setReady] = useState(pathname === "/sign-in" ? false : true);
-  const [auth, setAuth] = useState<WhoAmI>({ authenticated: false });
-
+  /* Keyboard shortcut (B → Visit Store) */
   useEffect(() => {
-    const handleKeyPress = (event: KeyboardEvent) => {
+    const handleKeyPress = (e: KeyboardEvent) => {
       if (
-        event.key.toLowerCase() === "b" &&
-        !event.ctrlKey &&
-        !event.metaKey &&
-        !event.altKey
+        e.key.toLowerCase() === "b" &&
+        !e.ctrlKey &&
+        !e.metaKey &&
+        !e.altKey
       ) {
-        // Check if user is not typing in an input field
-        const activeElement = document.activeElement as HTMLElement;
+        const el = document.activeElement as HTMLElement;
         if (
-          activeElement &&
-          (activeElement.tagName === "INPUT" ||
-            activeElement.tagName === "TEXTAREA" ||
-            activeElement.contentEditable === "true")
-        ) {
+          el?.tagName === "INPUT" ||
+          el?.tagName === "TEXTAREA" ||
+          el?.contentEditable === "true"
+        )
           return;
-        }
 
-        event.preventDefault();
-        document.getElementById("sign-in-link")?.click();
+        e.preventDefault();
+        document.getElementById("store-link")?.click();
       }
     };
 
@@ -48,121 +34,179 @@ export function Navbar() {
     return () => document.removeEventListener("keydown", handleKeyPress);
   }, []);
 
-  useEffect(() => {
-    // Only bother fetching auth on /sign-in (so other pages never show a loading state).
-    if (pathname !== "/sign-in") return;
-
-    const ctrl = new AbortController();
-
-    fetch("https://app.graycup.org/api/whoami", {
-      method: "GET",
-      credentials: "include",
-      signal: ctrl.signal,
-    })
-      .then((r) => (r.ok ? r.json() : { authenticated: false }))
-      .then((data: WhoAmI) => {
-        setAuth(data);
-        setReady(true);
-      })
-      .catch(() => {
-        setAuth({ authenticated: false });
-        setReady(true);
-      });
-
-    return () => ctrl.abort();
-  }, [pathname]);
-
-  const showDashboardCTA = pathname === "/sign-in" && auth.authenticated;
-
   return (
-    <header className="w-full py-2 bg-white border-b border-neutral-200">
-      <div className="flex h-14 items-center justify-between max-w-7xl mx-auto px-4 lg:px-6">
-        <div className="flex items-center gap-6">
-          <Link href="/" className="font-normal flex items-center gap-3">
-            <Image
-              src="/logo.svg"
-              alt="Gray Cup"
-              draggable={false}
-              width={45}
-              height={45}
-            />
-            <p className="font-semibold text-neutral-900 text-xl tracking-tight">
-              Gray Cup
-            </p>
-          </Link>
-          <nav className=" font-medium text-sm max-sm:hidden flex pl-3 gap-1">
-            <Link
-              href="/products"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              Products
+    <>
+      {/* ================= NAVBAR ================= */}
+      <header className="w-full border-b border-neutral-200 bg-white">
+        <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 lg:px-6">
+          {/* LEFT */}
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.svg"
+                alt="Gray Cup"
+                width={45}
+                height={45}
+                draggable={false}
+              />
+              <span className="text-xl font-semibold text-nowrap tracking-tight">
+                Gray Cup
+              </span>
             </Link>
-            <Link
-              href="/newsroom"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              Newsroom
-            </Link>
-            <a
-              href="/impact"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              Our Impact
-            </a>
-            <Link
-              href="/social-responsibility"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              Social Responsibility
-            </Link>
-            <Link
-              href="/careers"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              Careers
-            </Link>
-            <Link
-              href="/about"
-              className="circular rounded-md px-3 py-2 text-neutral-800"
-            >
-              About
-            </Link>
-          </nav>
-        </div>
 
-        <div className="flex items-center gap-2">
-          <>
-            {/* Internal route: use Link + asChild so it doesn't flash a reload */}
-            <Link href="/contact" className="inline-block max-sm:hidden">
+            {/* Tablet-visible links */}
+            <nav className="hidden md:flex gap-1 text-sm font-medium">
+              {[
+                ["Products", "/products"],
+                ["Newsroom", "/newsroom"],
+                ["Our Impact", "/impact"],
+                ["About", "/about"],
+              ].map(([label, href]) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="rounded-md px-3 py-2 hover:bg-neutral-100"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Desktop-only links */}
+            <nav className="hidden lg:flex gap-1 text-sm font-medium">
+              {[
+                ["Social Responsibility", "/social-responsibility"],
+                ["Careers", "/careers"],
+              ].map(([label, href]) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="rounded-md px-3 py-2 hover:bg-neutral-100"
+                >
+                  {label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex items-center gap-2">
+            {/* Desktop buttons */}
+            <Link href="/contact" className="hidden xl:inline-block">
               <Button variant="lightgray" size="sm">
                 Email Us
               </Button>
             </Link>
 
-            {/* Sign-in always visible outside the app */}
             <a
+              id="store-link"
               href="https://graycup.in/"
-              className="inline-block max-sm:hidden"
               target="_blank"
-              rel="dofollow noopener"
-              id="sign-in-link"
+              rel="noopener"
+              className="hidden lg:inline-block"
             >
               <Button variant="blue" size="sm">
-                Visit Store{" "}
-                <kbd
-                  className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    document.getElementById("sign-in-link")?.click();
-                  }}
-                >
+                Visit Store
+                <kbd className="ml-2 rounded border border-neutral-700 bg-neutral-800 px-1.5 py-0.5 text-[11px]">
                   B
                 </kbd>
               </Button>
             </a>
-          </>
+
+            {/* Hamburger — visible whenever anything is hidden */}
+            <button
+              className="lg:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-neutral-100"
+              onClick={() => setMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
+      </header>
+
+      {/* ================= SIDEBAR ================= */}
+      <div
+        className={`fixed inset-0 z-50 transition-opacity ${
+          menuOpen ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-black/40"
+          onClick={() => setMenuOpen(false)}
+        />
+
+        {/* Drawer */}
+        <aside
+          className={`absolute right-0 top-0 h-full w-72 bg-white p-6 shadow-xl
+          transform transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]
+          ${menuOpen ? "translate-x-0" : "translate-x-full"}
+        `}
+        >
+          <button
+            className="mb-4 self-end rounded-md p-2 hover:bg-neutral-100"
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+
+          {/* All links */}
+          <nav className="flex flex-col gap-2 text-sm font-medium">
+            {[
+              ["Products", "/products"],
+              ["Newsroom", "/newsroom"],
+              ["Our Impact", "/impact"],
+              ["Social Responsibility", "/social-responsibility"],
+              ["Careers", "/careers"],
+              ["About", "/about"],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                onClick={() => setMenuOpen(false)}
+                className="rounded-md px-3 py-2 hover:bg-neutral-100"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Actions */}
+          <div className="mt-auto flex flex-col gap-2 pt-6">
+            <Link href="/contact" onClick={() => setMenuOpen(false)}>
+              <Button variant="lightgray" size="sm" className="w-full">
+                Email Us
+              </Button>
+            </Link>
+
+            <a
+              href="https://graycup.in/"
+              target="_blank"
+              rel="noopener"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Button variant="blue" size="sm" className="w-full">
+                Visit Store
+              </Button>
+            </a>
+          </div>
+        </aside>
       </div>
-    </header>
+    </>
   );
 }
