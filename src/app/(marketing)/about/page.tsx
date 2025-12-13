@@ -41,6 +41,21 @@ export default function AboutPage() {
           </p>
         </div>
 
+        <div>
+          <p>
+            <span className="font-semibold">Legal Name</span>: Gray Cup Enterprises Private Limited
+            <br/>
+            <span className="font-semibold">Incorporation Date</span>: 7th November, 2025
+            <br/>
+            <span className="font-semibold">CIN</span>: U47211DL2025PTC457808
+            <br/>
+            <span className="font-semibold">GST</span>: 07AAMCG4985H1Z2
+            <br />
+            <span className="font-semibold">UPI ID</span>: graycup@kotak
+          </p>
+        </div>
+        <hr className="my-8" />
+
         <h2 className="text-xl md:text-2xl font-medium text-neutral-800 my-4">
           Notable People
         </h2>
