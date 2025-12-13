@@ -3,20 +3,20 @@ import Image from "next/image";
 export function CoffeeSection() {
   return (
     <div className="px-0 lg:px-8 pb-8 lg:pb-20">
-      <div className="flex flex-row  max-w-fit ">
+      <div className="flex flex-row justify-center md:justify-start ">
         <div className="flex flex-row rounded-none sm:rounded-l-2xl bg-orange-200">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Coffee Beans <br /> from Different <br /> Regions
           </h3>
         </div>
         <div className="flex flex-row bg-indigo-50">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Quality Coffee <br /> Beans for
             <br /> Everyone
           </h3>
         </div>
         <div className="flex flex-row sm:rounded-tr-2xl z-30 bg-fuchsia-200">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Great Coffee <br /> shouldn't be
             <br />
             exclusive
@@ -25,14 +25,14 @@ export function CoffeeSection() {
         <Image
           src="/beans.webp"
           alt="beans"
-          className="-mb-30 z-10 rotate-30 grayscale opacity-50 hover:opacity-100 duration-300 hidden lg:block  hover:grayscale-0"
+          className="-mb-20 z-10 rotate-20 grayscale opacity-50 hover:opacity-100 duration-300 hidden md:block  hover:grayscale-0"
           draggable="false"
           width="280"
           height="280"
         />
       </div>
 
-      <div className="flex sm:justify-end z-30">
+      <div className="flex justify-center sm:justify-end z-30">
         <Image
           src="/three-beans.webp"
           alt="beans"
@@ -43,20 +43,20 @@ export function CoffeeSection() {
         />
 
         <div className="flex flex-row sm:rounded-bl-2xl bg-yellow-200 z-30">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Single Origin
             <br /> and <br />
             Blended Beans
           </h3>
         </div>
         <div className="flex flex-row bg-neutral-100 z-30">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Roasted Carefully <br /> with <br />
             Consistency
           </h3>
         </div>
         <div className="flex flex-row sm:rounded-r-2xl bg-green-200 z-30">
-          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-3xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
+          <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Nothing Added.
             <br /> Nothing
             <br />
