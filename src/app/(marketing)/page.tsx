@@ -44,6 +44,7 @@ export default function Home() {
   }, []);
 
   return (
+    <div>
     <div className="mx-auto px-4 lg:px-6 h-auto my-10">
       <div className="md:min-h-screen pt-10 pb-20 md:pb-0 flex flex-col justify-center">
         <div className="grid grid-cols-1 md:grid-cols-[70%_30%] gap-6 items-center">
@@ -132,8 +133,14 @@ export default function Home() {
 
         {/* <Image src="/beans-circle.webp" alt="coffee beans" className="pl-2" width={200} height={200} /> */}
 
-        <CoffeeSection />
       </div>
     </div>
+    <div className="px-4 lg:px-6">
+
+    </div>
+    <CoffeeSection />
+
+    </div>
+
   );
 }

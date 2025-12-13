@@ -147,6 +147,7 @@ export default function PricingPage() {
   const frameRef = useRef<HTMLDivElement | null>(null);
 
   return (
+    <div className="px-4 lg:px-6">
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
@@ -308,5 +309,7 @@ export default function PricingPage() {
         </div>
       </div>
     </div>
+    </div>
+
   );
 }

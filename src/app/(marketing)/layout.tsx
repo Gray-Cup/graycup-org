@@ -15,7 +15,7 @@ export default function MarketingLayout({
 
       {/* Main content */}
       <main className="w-full">
-        <div className="max-w-7xl mx-auto px-4 lg:px-6 ">{children}</div>
+        <div className="max-w-7xl mx-auto  ">{children}</div>
       </main>
 
       {/* Footer */}
