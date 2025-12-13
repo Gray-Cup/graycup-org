@@ -92,10 +92,10 @@ export function Navbar() {
           </Link>
           <nav className=" font-medium text-sm max-sm:hidden flex pl-3 gap-1">
             <Link
-              href="/pricing"
+              href="/products"
               className="circular rounded-md px-3 py-2 text-neutral-800"
             >
-              Culture
+              Products
             </Link>
             <Link
               href="/newsroom"

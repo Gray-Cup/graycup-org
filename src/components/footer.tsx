@@ -20,7 +20,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/pricing"
+                  href="/products"
                   target="_blank"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
