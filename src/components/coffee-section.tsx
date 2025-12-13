@@ -25,10 +25,10 @@ export function CoffeeSection() {
         <Image
           src="/beans.webp"
           alt="beans"
-          className="-mb-30 z-10 rotate-30 grayscale opacity-50 hover:opacity-100 duration-300 hover:grayscale-0"
+          className="-mb-30 z-10 rotate-30 grayscale opacity-50 hover:opacity-100 duration-300 hidden lg:block  hover:grayscale-0"
           draggable="false"
-          width="320"
-          height="320"
+          width="280"
+          height="280"
         />
       </div>
 
@@ -36,7 +36,7 @@ export function CoffeeSection() {
         <Image
           src="/three-beans.webp"
           alt="beans"
-          className="w-fit grayscale opacity-50 hover:opacity-100 duration-300 hover:grayscale-0 h-fit z-10 rotate-30"
+          className="w-fit grayscale opacity-50 hover:opacity-100 duration-300 hover:grayscale-0  h-fit z-10 rotate-30"
           draggable="false"
           width="70"
           height="70"
