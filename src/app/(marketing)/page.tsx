@@ -135,15 +135,96 @@ export default function Home() {
       <div className="px-4 lg:px-6"></div>
       <CoffeeSection />
 
-      <div className="pt-10 pb-20 max-w-6xl mx-auto md:pb-0 flex flex-col justify-center">
-        <h2 className="text-2xl font-medium">Where you can see our Products</h2>
-        <Image
-          src="/available-amazon.png"
-          alt="available on amazon"
-          width="110"
-          height="110"
-          className="mb-20"
-        />
+      <div className="pt-10 pb-20 max-w-6xl mx-auto px-4 lg:px-6 md:pb-0 flex flex-col justify-center">
+        <h2 className="text-2xl font-medium">
+          Our products will be available soon at
+        </h2>
+        <div className="mt-5 mb-20 flex flex-wrap gap-8">
+          <Image
+            src="/available/amazon.svg"
+            alt="available on amazon"
+            className="pt-0.5 max-w-full"
+            height={100}
+            width={100}
+          />
+          <Image
+            src="/available/flipkart.svg"
+            alt="available on amazon"
+            className="pb-3.5 max-w-full"
+            height={140}
+            width={140}
+          />
+          <Image
+            src="/available/gem.svg"
+            alt="available on amazon"
+            className=" pb-1.5 max-w-full"
+            height={130}
+            width={130}
+          />
+          <Image
+            src="/available/indiamart.svg"
+            alt="available on amazon"
+            className="pb-3.5 max-w-full"
+            height={65}
+            width={65}
+          />
+          <Image
+            src="/available/meesho.svg"
+            alt="available on amazon"
+            className="pb-3.5 max-w-full"
+            height={140}
+            width={140}
+          />
+          <Image
+            src="/available/tata-cliq.svg"
+            alt="available on amazon"
+            className="pb-2 max-w-full"
+            height={60}
+            width={60}
+          />
+          <Image
+            src="/available/ondc.svg"
+            alt="available on amazon"
+            className="pb-2.5 max-w-full"
+            height={110}
+            width={110}
+          />
+          <Image
+            src="/available/vishal-mart.svg"
+            alt="available on amazon"
+            className="pb-3 max-w-full"
+            height={130}
+            width={130}
+          />
+          <Image
+            src="/available/reliance-fresh.svg"
+            alt="available on amazon"
+            className="pb-4 max-w-full"
+            height={140}
+            width={140}
+          />
+          <Image
+            src="/available/trade-india.svg"
+            alt="available on amazon"
+            className=" max-w-full"
+            height={70}
+            width={70}
+          />
+          <Image
+            src="/available/d-mart.svg"
+            alt="available on amazon"
+            className=" max-w-full"
+            height={100}
+            width={100}
+          />
+          <Image
+            src="/available/jio-mart.svg"
+            alt="available on amazon"
+            className=" max-w-full"
+            height={50}
+            width={50}
+          />
+        </div>
       </div>
     </div>
   );
