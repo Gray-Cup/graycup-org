@@ -12,7 +12,7 @@ export function UserJotWidget() {
       <Script strategy="afterInteractive">
         {`window.uj.init('cmj6zg7ap00ux14mmuuj2e4ei', {
           widget: true,
-          position: 'right',
+          position: 'left',
           theme: 'auto'
         });`}
       </Script>
