@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import RootProviders from "@/components/providers";
 import { UserJotWidget } from "@/components/userjot-widget";
 import Script from "next/script";
+import IntercomChat from "@/components/IntercomChat";
 
 const fontSans = Inter({
   subsets: ["latin"],
@@ -88,6 +89,7 @@ export default function RootLayout({
       >
         <RootProviders>{children}</RootProviders>
         <UserJotWidget />
+        <IntercomChat />
         <Script>
           {`(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");
     script.src="${(process.env.NEXT_PUBLIC_CHATBASE_HOST || "https://www.chatbase.co/") + "embed.min.js"}";
