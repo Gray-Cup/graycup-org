@@ -33,14 +33,14 @@ export function CoffeeSection() {
       </div>
 
       <div className="flex justify-center sm:justify-end xl:justify-center z-30">
-        <Image
+        {/* <Image
           src="/three-beans.webp"
           alt="beans"
           className="w-fit grayscale opacity-50 hover:opacity-100 duration-300 hover:grayscale-0 hidden md:block  h-fit z-10 rotate-30"
           draggable="false"
           width="70"
           height="70"
-        />
+        /> */}
 
         <div className="flex flex-row sm:rounded-bl-2xl bg-yellow-200 z-30">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
