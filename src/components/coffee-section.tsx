@@ -11,7 +11,7 @@ export function CoffeeSection() {
         </div>
         <div className="flex flex-row bg-indigo-50">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
-            Quality <br /> Coffee Beans 
+            Quality <br /> Coffee Beans
             <br /> for You
           </h3>
         </div>

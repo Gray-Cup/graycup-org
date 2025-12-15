@@ -41,55 +41,55 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-md mb-2">Socials</h4>
             <div className="flex flex-row gap-14">
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="https://x.com/TheGrayCup"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Twitter
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://github.com/Gray-Cup"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Github
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://discord.gg/gpRxmW63JW"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Discord
-                </Link>
-              </li>
-            </ul>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="https://instagram.com/thegraycup"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Instagram
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://github.com/Gray-Cup"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Reddit
-                </Link>
-              </li>
-            </ul>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    href="https://x.com/TheGrayCup"
+                    target="_blank"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Twitter
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/Gray-Cup"
+                    target="_blank"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Github
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://discord.gg/gpRxmW63JW"
+                    target="_blank"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Discord
+                  </Link>
+                </li>
+              </ul>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link
+                    href="https://instagram.com/thegraycup"
+                    target="_blank"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Instagram
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="https://github.com/Gray-Cup"
+                    target="_blank"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Reddit
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

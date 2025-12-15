@@ -27,7 +27,6 @@ type Tier = {
 
 /* ---------- Page ---------- */
 export default function AboutPage() {
-
   return (
     <div className="min-h-screen py-20 px-4 lg:px-6">
       <div className="max-w-5xl mx-auto px-4 lg:px-6">
@@ -42,14 +41,16 @@ export default function AboutPage() {
 
         <div>
           <p>
-            <span className="font-semibold">Legal Name</span>: Gray Cup Enterprises Private Limited
+            <span className="font-semibold">Legal Name</span>: Gray Cup
+            Enterprises Private Limited
             <br />
             <span className="font-semibold">Country</span>: India/Bharat
-            <br/>
-            <span className="font-semibold">Incorporation Date</span>: 7th November, 2025
-            <br/>
+            <br />
+            <span className="font-semibold">Incorporation Date</span>: 7th
+            November, 2025
+            <br />
             <span className="font-semibold">CIN</span>: U47211DL2025PTC457808
-            <br/>
+            <br />
             <span className="font-semibold">GST</span>: 07AAMCG4985H1Z2
             <br />
             <span className="font-semibold">UPI ID</span>: graycup@kotak
@@ -57,12 +58,31 @@ export default function AboutPage() {
 
           <h3 className="text-lg md:text-xl font-semibold text-neutral-800 mt-4 mb-2">
             Other Sites
-        </h3>
-        <p><span className="font-semibold">Online Store for Consumers</span>: <a href="https://graycup.in/" className="link" target="_blank">graycup.in</a>(India Only)</p>
-        <p><span className="font-semibold">Online Store for Businesses</span>: <a href="https://b2b.graycup.in/" className="link" target="_blank">b2b.graycup.in</a>(Worldwide)</p>
-        <p><span className="font-semibold">IndiaMart</span>: <a href="https://www.indiamart.com/gray-cup-enterprises/" className="link" target="_blank">indiamart.com/gray-cup-enterprises</a></p>
-
-        
+          </h3>
+          <p>
+            <span className="font-semibold">Online Store for Consumers</span>:{" "}
+            <a href="https://graycup.in/" className="link" target="_blank">
+              graycup.in
+            </a>
+            (India Only)
+          </p>
+          <p>
+            <span className="font-semibold">Online Store for Businesses</span>:{" "}
+            <a href="https://b2b.graycup.in/" className="link" target="_blank">
+              b2b.graycup.in
+            </a>
+            (Worldwide)
+          </p>
+          <p>
+            <span className="font-semibold">IndiaMart</span>:{" "}
+            <a
+              href="https://www.indiamart.com/gray-cup-enterprises/"
+              className="link"
+              target="_blank"
+            >
+              indiamart.com/gray-cup-enterprises
+            </a>
+          </p>
         </div>
         <hr className="my-8" />
 
@@ -129,7 +149,15 @@ export default function AboutPage() {
                 <IoIosMail size={20} />
               </Link>
             </div>
-<a className="mt-4 mb-2" href="https://cal.com/arjunaditya/30min?user=arjunaditya" target="_blank"><Button variant="lightgraybg" size="minor">Schedule Call</Button></a>
+            <a
+              className="mt-4 mb-2"
+              href="https://cal.com/arjunaditya/30min?user=arjunaditya"
+              target="_blank"
+            >
+              <Button variant="lightgraybg" size="minor">
+                Schedule Call
+              </Button>
+            </a>
           </div>
           {/* <div>
             <Image

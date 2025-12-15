@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 import RootProviders from "@/components/providers";
-import { UserJotWidget } from '@/components/userjot-widget';
+import { UserJotWidget } from "@/components/userjot-widget";
 import Script from "next/script";
 
 const fontSans = Inter({
