@@ -91,7 +91,7 @@ export default function RootLayout({
         <RootProviders>{children}</RootProviders>
         <UserJotWidget />
         <WhatsappWidget />
-        <IntercomChat />
+        {/* <IntercomChat /> */}
         <Script id="crisp-chat" strategy="afterInteractive">
           {`
             window.$crisp = [];
