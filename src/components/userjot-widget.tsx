@@ -13,7 +13,7 @@ export function UserJotWidget() {
         {`window.uj.init('cmj6zg7ap00ux14mmuuj2e4ei', {
           widget: true,
           position: 'left',
-          theme: 'auto'
+          theme: 'light'
         });`}
       </Script>
     </>
