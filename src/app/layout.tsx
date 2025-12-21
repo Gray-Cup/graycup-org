@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     description: "We provide better customer experience with knowledgebase",
     images: [
       {
-        url: "/og.png",
+        url: "https://graycup.org/og.png",
         width: 1200,
         height: 630,
         alt: "Gray Cup - Better customer experience with knowledgebase",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gray Cup",
     description: "We provide better customer experience with knowledgebase",
-    images: ["/og.png"],
+    images: ["https://graycup.org/og.png"],
   },
 };
 
