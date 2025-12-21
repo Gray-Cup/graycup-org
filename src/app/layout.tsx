@@ -43,7 +43,7 @@ const fontPublicSans = Public_Sans({
 
 export const metadata: Metadata = {
   title: "Gray Cup",
-  description: "We provide better customer experience with knowledgebase",
+  description: "We sell indian tea, coffee and matcha to people who care about quality.",
   icons: {
     icon: "/icon.svg",
     href: "/icon.svg",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Gray Cup",
-    description: "We provide better customer experience with knowledgebase",
+    description: "We sell indian tea, coffee and matcha to people who care about quality.",
     images: [
       {
         url: "https://graycup.org/og.png",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gray Cup",
-    description: "We provide better customer experience with knowledgebase",
+    description: "We sell indian tea, coffee and matcha to people who care about quality.",
     images: ["https://graycup.org/og.png"],
   },
 };
