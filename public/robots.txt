@@ -2,8 +2,5 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://graycup.org
-
 # Sitemaps
 Sitemap: https://graycup.org/sitemap.xml
