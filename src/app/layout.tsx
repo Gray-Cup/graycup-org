@@ -2,7 +2,6 @@ import React from "react";
 import type { Metadata } from "next";
 import { Poppins, Inter, Instrument_Sans, Public_Sans } from "next/font/google";
 import "@/styles/globals.css";
-import { Analytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 import RootProviders from "@/components/providers";
 import { UserJotWidget } from "@/components/userjot-widget";
@@ -113,7 +112,6 @@ export default function RootLayout({
     script.domain="${process.env.NEXT_PUBLIC_CHATBASE_HOST || "www.chatbase.co"}";
     document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();`}
         </Script> */}
-        <Analytics />
       </body>
     </html>
   );
