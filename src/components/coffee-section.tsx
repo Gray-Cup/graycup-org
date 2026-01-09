@@ -6,18 +6,18 @@ export function CoffeeSection() {
       <div className="flex flex-row justify-center md:justify-start xl:pl-10">
         <div className="flex flex-row rounded-none sm:rounded-l-2xl bg-orange-200">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
-            Coffee Beans <br /> from Different <br /> Regions
+            Beans & Leaves <br /> from Global <br /> Regions
           </h3>
         </div>
         <div className="flex flex-row bg-indigo-50">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
-            Quality <br /> Coffee Beans
+            Premium <br /> Matcha & Tea
             <br /> for You
           </h3>
         </div>
         <div className="flex flex-row sm:rounded-tr-2xl z-30 bg-fuchsia-200">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
-            Great Coffee <br /> shouldn't be
+            Great Brews <br /> shouldn't be
             <br />
             exclusive
           </h3>
@@ -46,12 +46,12 @@ export function CoffeeSection() {
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 text-nowrap font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
             Single Origin
             <br /> and <br />
-            Blended Beans
+            Hand Picked
           </h3>
         </div>
         <div className="flex flex-row bg-neutral-100 z-30">
           <h3 className="text-sm xs:text-md sm:text-lg md:text-xl lg:text-2xl text-orange-950 font-semibold font-instrument-sans py-4 md:py-8 px-5 md:px-6">
-            Roasted <br /> with <br />
+            Crafted <br /> with <br />
             Consistency
           </h3>
         </div>
