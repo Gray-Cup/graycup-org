@@ -143,7 +143,15 @@ export default function ProductsPage() {
         </div>
       </div>
 
-      <Dialog open={!!selectedProduct} onOpenChange={(open: boolean) => !open && setSelectedProduct(null)}>
+      <Dialog
+        open={!!selectedProduct}
+        onOpenChange={(open: boolean) => {
+          if (!open) {
+            // Delay clearing selectedProduct to allow closing animation to complete
+            setTimeout(() => setSelectedProduct(null), 300);
+          }
+        }}
+      >
         <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
           {selectedProduct && (
             <>
