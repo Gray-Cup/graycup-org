@@ -44,10 +44,26 @@ export const metadata: Metadata = {
   title: "Gray Cup",
   description: "We sell indian tea, coffee and matcha to people who care about quality.",
   icons: {
-    icon: "/icon.svg",
-    href: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [
+      {
+        url: "/icon-light.svg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark.svg",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+    apple: [
+      {
+        url: "/icon-light.svg",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark.svg",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
   },
   openGraph: {
     title: "Gray Cup",
