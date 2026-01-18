@@ -45,6 +45,7 @@ export const metadata: Metadata = {
   description: "We sell indian tea, coffee and matcha to people who care about quality.",
   icons: {
     icon: [
+      { url: "/favicon.ico" },
       {
         url: "/icon-light.svg",
         media: "(prefers-color-scheme: light)",
