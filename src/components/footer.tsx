@@ -1,109 +1,70 @@
-import GrayCupLogo from "./GrayCupLogo";
 import Link from "next/link";
 
 export default function Footer() {
+  const mainLinks = [
+    { href: "/about", label: "About" },
+    { href: "/products", label: "Products" },
+    { href: "/contact", label: "Contact" },
+  ];
+
+  const socialLinks = [
+    { href: "https://x.com/TheGrayCup", label: "Twitter" },
+    { href: "https://github.com/Gray-Cup", label: "GitHub" },
+    { href: "https://discord.gg/gpRxmW63JW", label: "Discord" },
+    { href: "https://instagram.com/thegraycup", label: "Instagram" },
+  ];
+
+  const resourceLinks = [
+    { href: "https://status.graycup.org/", label: "Status" },
+    { href: "/sitemap.xml", label: "Sitemap" },
+  ];
+
   return (
     <footer className="border-t border-neutral-200 bg-white">
-      <div className="max-w-7xl mx-auto px-4 lg:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 ">
-          <div>
-            <h4 className="font-semibold text-md mb-4">Main</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/about"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/products"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-md mb-2">Socials</h4>
-            <div className="flex flex-row gap-14">
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="https://x.com/TheGrayCup"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Twitter
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/Gray-Cup"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Github
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://discord.gg/gpRxmW63JW"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Discord
-                  </Link>
-                </li>
-              </ul>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="https://instagram.com/thegraycup"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Instagram
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/Gray-Cup"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Reddit
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://status.graycup.org/"
-                    target="_blank"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    Status Page
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 py-8">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+            {mainLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+            {socialLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
-        <div className="mt-10 pt-6 border-t border-border text-center text-sm text-muted-foreground">
+
+        <div className="mt-6 pt-6 border-t border-neutral-200 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Gray Cup. All rights reserved.</p>
+          <nav className="flex items-center gap-x-6">
+            {resourceLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="hover:text-foreground transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
