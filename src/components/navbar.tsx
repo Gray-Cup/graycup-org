@@ -68,9 +68,14 @@ export function Navbar() {
           {/* RIGHT */}
           <div className="flex items-center gap-2">
             {/* Desktop buttons */}
-            <Link href="/contact" className="hidden xl:inline-block">
+            <Link
+              href="/contact"
+              className="hidden xl:inline-block"
+              target="_blank"
+              onClick={() => setMenuOpen(false)}
+            >
               <Button variant="lightgray" size="sm">
-                Email Us
+                B2B Store
               </Button>
             </Link>
 
@@ -161,16 +166,19 @@ export function Navbar() {
 
           {/* Actions */}
           <div className="mt-auto flex flex-col gap-2 pt-6">
-            <Link href="/contact" onClick={() => setMenuOpen(false)}>
-              <Button variant="lightgray" size="sm" className="w-full">
-                Email Us
+            <Link
+              href="https://b2b.graycup.in"
+              target="_blank"
+              onClick={() => setMenuOpen(false)}
+            >
+              <Button variant="red" size="sm" className="w-full">
+                B2B Store
               </Button>
             </Link>
 
             <a
               href="https://graycup.in/"
               target="_blank"
-              rel="noopener"
               onClick={() => setMenuOpen(false)}
             >
               <Button variant="blue" size="sm" className="w-full">

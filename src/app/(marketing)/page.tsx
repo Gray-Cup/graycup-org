@@ -113,9 +113,9 @@ export default function Home() {
                 Gray Cup Narrative
               </h2>
               <p className="text-md sm:text-xl mb-10 text-neutral-700 my-4 max-w-2xl">
-                Gray Cup believes in the power of the perfect brew. Whether it's the
-                calming ritual of Matcha, the bold awakening of artisanal Coffee, or
-                the soothing embrace of fine Tea.
+                Gray Cup believes in the power of the perfect brew. Whether it's
+                the calming ritual of Matcha, the bold awakening of artisanal
+                Coffee, or the soothing embrace of fine Tea.
                 <br />
                 <br />
                 Sustainably sourced, expertly curated, and poured for you.
@@ -167,7 +167,10 @@ export default function Home() {
               width={130}
             />
           </a>
-          <a href="https://www.indiamart.com/gray-cup-enterprises/" target="_blank">
+          <a
+            href="https://www.indiamart.com/gray-cup-enterprises/"
+            target="_blank"
+          >
             <Image
               src="/available/indiamart.svg"
               alt="available on amazon"
@@ -203,7 +206,10 @@ export default function Home() {
               width={130}
             />
           </a>
-          <a href="https://relianceretail.com/reliance-fresh.html/" target="_blank">
+          <a
+            href="https://relianceretail.com/reliance-fresh.html/"
+            target="_blank"
+          >
             <Image
               src="/available/reliance-fresh.svg"
               alt="available at reliance fresh stores"

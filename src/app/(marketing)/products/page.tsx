@@ -121,9 +121,7 @@ function ProductCard({
         />
       </div>
       <div className="-mt-3 pb-4 text-center">
-        <h3 className="text-md font-semibold text-black">
-          {product.name}
-        </h3>
+        <h3 className="text-md font-semibold text-black">{product.name}</h3>
       </div>
     </Card>
   );
@@ -131,8 +129,7 @@ function ProductCard({
 
 export default function ProductsPage() {
   const [open, setOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] =
-    useState<Product | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
     <div className="px-4 lg:px-6">
@@ -197,12 +194,8 @@ export default function ProductsPage() {
                 {/* Content */}
                 <div className="md:w-3/5 flex flex-col gap-4">
                   <div className="flex gap-2 text-sm text-muted-foreground">
-                    <span className="font-medium">
-                      Locations:
-                    </span>
-                    <span>
-                      {selectedProduct.locations.join(", ")}
-                    </span>
+                    <span className="font-medium">Locations:</span>
+                    <span>{selectedProduct.locations.join(", ")}</span>
                   </div>
 
                   <p className="text-base text-gray-700 leading-relaxed">
@@ -214,29 +207,27 @@ export default function ProductsPage() {
                       Key Features
                     </h4>
                     <ul className="space-y-2">
-                      {selectedProduct.details.map(
-                        (detail, index) => (
-                          <li
-                            key={index}
-                            className="flex items-start gap-2 text-sm text-gray-600"
+                      {selectedProduct.details.map((detail, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-gray-600"
+                        >
+                          <svg
+                            className="w-5 h-5 shrink-0 text-green-600 mt-0.5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
                           >
-                            <svg
-                              className="w-5 h-5 shrink-0 text-green-600 mt-0.5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              strokeWidth={2}
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M5 13l4 4L19 7"
-                              />
-                            </svg>
-                            <span>{detail}</span>
-                          </li>
-                        )
-                      )}
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          <span>{detail}</span>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
