@@ -7,6 +7,7 @@ import RootProviders from "@/components/providers";
 import { UserJotWidget } from "@/components/userjot-widget";
 import Script from "next/script";
 import IntercomChat from "@/components/IntercomChat";
+import { Analytics } from "@vercel/analytics/next"
 import { WhatsappWidget } from "@/components/whatsapp-widget";
 
 const fontSans = Inter({
@@ -108,6 +109,7 @@ export default function RootLayout({
           fontPublicSans.variable,
         )}
       >
+        <Analytics />
         <RootProviders>{children}</RootProviders>
         {/* <UserJotWidget /> */}
         <WhatsappWidget />
