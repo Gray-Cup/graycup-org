@@ -109,21 +109,36 @@ export default function Home() {
               <div className="block md:hidden max-md:pb-5">
                 <CoffeeCup />
               </div>
-              <h2 className="text-2xl sm:text-5xl font-medium text-neutral-900 mb-6 font-instrument-sans">
+
+              <h2 className="text-2xl sm:text-4xl font-medium text-neutral-900 mb-6 font-instrument-sans">
                 Gray Cup Narrative
               </h2>
-              <p className="text-md sm:text-xl mb-10 text-neutral-700 my-4 max-w-2xl">
-                Gray Cup believes in the power of the perfect brew. Whether it's
-                the calming ritual of Matcha, the bold awakening of artisanal
-                Coffee, or the soothing embrace of fine Tea.
+
+              <p className="text-md sm:text-lg mb-10 text-neutral-700 my-4 max-w-2xl leading-relaxed">
+                <span className="mb-4">
+                  Gray Cup creates sustainable, high-quality essentials for
+                  everything that belongs in your cup.
+                </span>
+                Built on the idea of a{" "}
+                <span className="font-medium">neutral cup</span>, sustainable,
+                balanced, and uncompromising in quality, Gray Cup focuses on
+                what truly matters.
                 <br />
                 <br />
-                Sustainably sourced, expertly curated, and poured for you.
+                From coffee and matcha to tea and future essentials, we do not
+                chase categories or trends.
+                <br />
+                <br />
+                <span className="font-medium text-neutral-900">
+                  The best is what belongs in your cup.
+                </span>
               </p>
             </div>
+
             <div className="hidden md:block">
               <CoffeeCup />
             </div>
+
             <a href="https://discord.gg/gpRxmW63JW" target="_blank">
               <Button variant="gray">Join Our Discord</Button>
             </a>
