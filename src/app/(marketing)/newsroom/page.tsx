@@ -60,27 +60,6 @@ export default async function NewsroomPage() {
           ))}
         </div>
       )}
-
-      {/* Newsletter CTA */}
-      {posts.length > 0 && (
-        <section className="mt-16 text-center p-8 bg-muted/50 rounded-lg">
-          <h3 className="text-2xl font-semibold mb-4">Stay Updated</h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Get the latest insights on AI, customer experience, and business
-            automation delivered straight to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg">Subscribe to Newsletter</Button>
-            </Link>
-            <Link href="/case-studies">
-              <Button variant="outline" size="lg">
-                View Case Studies
-              </Button>
-            </Link>
-          </div>
-        </section>
-      )}
     </div>
   );
 }
