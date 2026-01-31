@@ -22,6 +22,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-neutral-200 bg-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-6 py-8">
+        {/* Top links */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <nav className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             {mainLinks.map((link) => (
@@ -50,8 +51,37 @@ export default function Footer() {
           </nav>
         </div>
 
+        {/* Legal text (Apple-style) */}
+        <div className="mt-6 text-xs leading-relaxed text-muted-foreground space-y-2">
+          <p>
+            Gray Cup Enterprises Private Limited is a company incorporated in
+            India under the Companies Act, 2013. Corporate Identification Number
+            (CIN): <span className="whitespace-nowrap">[INSERT CIN]</span>.
+          </p>
+          <p>
+            GST Registration Number:{" "}
+            <span className="whitespace-nowrap">[INSERT GSTIN]</span>. Product
+            availability, pricing, and specifications are subject to change
+            without notice.
+          </p>
+          <p>
+            Gray Cup Enterprises Private Limited is engaged in the sourcing,
+            packaging, trading, and export of goods. Export of products is
+            subject to applicable laws, customs regulations, and foreign trade
+            policies. International shipments may be subject to duties and taxes
+            imposed by destination authorities.
+          </p>
+          <p>
+            Product images and descriptions are for illustrative purposes only.
+            Actual products may vary. Use of this website constitutes acceptance
+            of our Terms of Use, Privacy Policy, and Sales & Shipping Policy.
+          </p>
+        </div>
+
+        {/* Bottom bar */}
         <div className="mt-6 pt-6 border-t border-neutral-200 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Gray Cup. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Gray Cup Enterprises Pvt. Ltd. All rights reserved.</p>
+
           <nav className="flex items-center gap-x-6">
             {resourceLinks.map((link) => (
               <Link
