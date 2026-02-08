@@ -117,6 +117,34 @@ export default function ShopPage() {
           </div>
         ))}
       </section>
+
+      <section className="mt-16">
+        <header className="mb-8">
+          <h2 className="text-3xl font-bold text-gray-900">Business & Wholesale</h2>
+          <p className="mt-3 max-w-2xl text-lg text-gray-600">
+            Looking to buy in bulk? Partner with us for wholesale pricing and business solutions.
+          </p>
+        </header>
+
+        <div className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+          <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+            <div>
+              <div className="flex items-center gap-3">
+                <GrayCupIcon />
+                <h3 className="text-xl font-semibold text-gray-900">GrayCup B2B</h3>
+              </div>
+              <p className="mt-3 max-w-lg text-gray-600">
+                Access wholesale pricing, bulk orders, and dedicated support for businesses, retailers, and resellers.
+              </p>
+            </div>
+            <Link href="https://b2b.graycup.in/" target="_blank" rel="noopener noreferrer">
+              <Button variant="default" size="lg">
+                Visit B2B Portal
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
