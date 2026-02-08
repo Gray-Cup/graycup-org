@@ -150,42 +150,10 @@ export default async function NewsroomPostPage({
             <Link href="/contact">
               <Button size="sm">Subscribe</Button>
             </Link>
-            <Link href="/case-studies">
-              <Button variant="outline" size="sm">
-                View Case Studies
-              </Button>
-            </Link>
           </div>
         </div>
       </footer>
 
-      {/* Related Articles */}
-      <section className="mt-16">
-        <h3 className="text-2xl font-semibold mb-6">Continue Reading</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Link href="/newsroom" className="group">
-            <div className="p-6 border rounded-lg hover:shadow-md transition-shadow">
-              <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors">
-                Explore All Articles
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                Discover more insights on AI, customer experience, and business
-                automation.
-              </p>
-            </div>
-          </Link>
-          <Link href="/case-studies" className="group">
-            <div className="p-6 border rounded-lg hover:shadow-md transition-shadow">
-              <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors">
-                Success Stories
-              </h4>
-              <p className="text-muted-foreground text-sm">
-                See how companies are transforming their customer experience.
-              </p>
-            </div>
-          </Link>
-        </div>
-      </section>
     </div>
   );
 }

@@ -97,63 +97,10 @@ export function getNewsroomPost(slug: string): NewsroomPost | null {
   }
 }
 
-export function getCaseStudies(): CaseStudy[] {
-  const caseStudiesDir = path.join(process.cwd(), "content/case-studies");
-
-  if (!fs.existsSync(caseStudiesDir)) {
-    console.log("Case studies directory not found, returning empty array");
-    return [];
-  }
-
-  const files = fs.readdirSync(caseStudiesDir);
-  const caseStudies = files
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => {
-      const slug = file.replace(".mdx", "");
-      const filePath = path.join(caseStudiesDir, file);
-      const fileContent = fs.readFileSync(filePath, "utf8");
-      const { data, content } = matter(fileContent);
-
-      return {
-        slug,
-        content,
-        ...data,
-      } as CaseStudy;
-    });
-
-  return caseStudies
-    .filter((cs) => cs.published)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
-
-export function getCaseStudy(slug: string): CaseStudy | null {
-  const caseStudiesDir = path.join(process.cwd(), "content/case-studies");
-  const filePath = path.join(caseStudiesDir, `${slug}.mdx`);
-
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
-
-  try {
-    const fileContent = fs.readFileSync(filePath, "utf8");
-    const { data, content } = matter(fileContent);
-
-    return {
-      slug,
-      content,
-      ...data,
-    } as CaseStudy;
-  } catch (error) {
-    console.error(`Error loading case study ${slug}:`, error);
-    return null;
-  }
-}
-
-export function getAllSlugs(type: "newsroom" | "case-studies"): string[] {
+export function getAllSlugs(type: "newsroom"): string[] {
   const directory =
     type === "newsroom"
-      ? path.join(process.cwd(), "content/newsroom")
-      : path.join(process.cwd(), "content/case-studies");
+      ? path.join(process.cwd(), "content/newsroom");
 
   try {
     const fileNames = fs.readdirSync(directory);
