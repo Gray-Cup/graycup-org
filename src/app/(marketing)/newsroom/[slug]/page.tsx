@@ -114,7 +114,6 @@ export default async function NewsroomPostPage({
             </div>
           )}
           <div className="flex items-center gap-2">
-            <Calendar className="h-4 w-4" />
             <span>
               {new Date(post.date).toLocaleDateString("en-US", {
                 year: "numeric",
