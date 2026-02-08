@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { EbayIcon, AmazonIcon, GrayCupIcon, EtsyIcon } from "@/components/logos";
+import { EbayIcon, AmazonIcon, GrayCupIcon, EtsyIcon, MeeshoIcon, ShopsyIcon, TataCliqIcon } from "@/components/logos";
 
 export const metadata: Metadata = {
   title: "Shop | GrayCup",
@@ -45,6 +45,30 @@ const stores = [
     icon: EbayIcon,
     inProgress: false,
   },
+  {
+    name: "Meesho",
+    description: "Find our products on eBay.",
+    href: "https://www.ebay.com/usr/graycup",
+    variant: "gray" as const,
+    icon: MeeshoIcon,
+    inProgress: true,
+  },
+  {
+    name: "Shopsy",
+    description: "Find our products on eBay.",
+    href: "https://www.ebay.com/usr/graycup",
+    variant: "gray" as const,
+    icon: ShopsyIcon,
+    inProgress: true,
+  },
+  {
+    name: "Tata Cliq",
+    description: "Find our products on eBay.",
+    href: "https://www.ebay.com/usr/graycup",
+    variant: "gray" as const,
+    icon: TataCliqIcon,
+    inProgress: true,
+  },
 ];
 
 export default function ShopPage() {
@@ -76,12 +100,12 @@ export default function ShopPage() {
               <div className="mt-4">
                 {store.inProgress ? (
                   <Button variant={store.variant} size="sm" disabled>
-                    Visit {store.name} →
+                    Visit {store.name}
                   </Button>
                 ) : (
                   <Link href={store.href} target="_blank" rel="noopener noreferrer">
                     <Button variant={store.variant} size="sm">
-                      Visit {store.name} →
+                      Visit {store.name}
                     </Button>
                   </Link>
                 )}
