@@ -5,6 +5,7 @@ export default function Footer() {
     { href: "/about", label: "About" },
     { href: "/products", label: "Products" },
     { href: "/contact", label: "Contact" },
+    { href: "/impressum", label: "Impressum" },
   ];
 
   const socialLinks = [
@@ -95,7 +96,19 @@ export default function Footer() {
           <p>
             Product images and descriptions are for illustrative purposes only.
             Actual products may vary. Use of this website constitutes acceptance
-            of our Terms of Use, Privacy Policy, and Sales & Shipping Policy.
+            of our{" "}
+            <Link href="/terms" className="underline hover:text-foreground">
+              Terms of Use
+            </Link>
+            ,{" "}
+            <Link href="/privacy" className="underline hover:text-foreground">
+              Privacy Policy
+            </Link>
+            , and{" "}
+            <Link href="/shipping" className="underline hover:text-foreground">
+              Sales & Shipping Policy
+            </Link>
+            .
           </p>
         </div>
 
