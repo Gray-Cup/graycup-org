@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const stores = [
   {
-    name: "GrayCup Store",
+    name: "Store",
     description: "Our official online store for consumers in India.",
     href: "https://graycup.in/",
     variant: "default" as const,
