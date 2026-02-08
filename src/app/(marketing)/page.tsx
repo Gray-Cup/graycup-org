@@ -71,15 +71,12 @@ export default function Home() {
                     </Button>
                   </a>
                   <a
-                    href="https://graycup.in/"
-                    target="_blank"
-                    rel="dofollow noopener"
-                    id="sign-in-link"
+                    href="/shop"
                   >
                     <Button variant="default" size="sm">
-                      Visit Store{" "}
+                      Shop Products{" "}
                       <kbd className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer">
-                        India
+                        International
                       </kbd>
                     </Button>
                   </a>

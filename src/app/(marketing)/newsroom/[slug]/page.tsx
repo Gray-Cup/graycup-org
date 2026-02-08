@@ -18,7 +18,7 @@ interface NewsroomPostPageProps {
 
 // Generate static params for all newsroom posts
 export async function generateStaticParams() {
-  const slugs = getAllSlugs("newsroom");
+  const slugs = getAllSlugs();
   return slugs.map((slug: string) => ({ slug }));
 }
 

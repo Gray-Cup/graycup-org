@@ -15,24 +15,6 @@ interface NewsroomPost {
   content: string;
 }
 
-interface CaseStudy {
-  slug: string;
-  title: string;
-  description: string;
-  client: string;
-  industry: string;
-  date: string;
-  tags: string[];
-  featured: boolean;
-  published: boolean;
-  results: Array<{
-    metric: string;
-    value: string;
-    description: string;
-  }>;
-  content: string;
-}
-
 export async function getNewsroomPosts(): Promise<NewsroomPost[]> {
   try {
     const newsroomDir = path.join(process.cwd(), "content/newsroom");
@@ -97,10 +79,8 @@ export function getNewsroomPost(slug: string): NewsroomPost | null {
   }
 }
 
-export function getAllSlugs(type: "newsroom"): string[] {
-  const directory =
-    type === "newsroom"
-      ? path.join(process.cwd(), "content/newsroom");
+export function getAllSlugs(): string[] {
+  const directory = path.join(process.cwd(), "content/newsroom");
 
   try {
     const fileNames = fs.readdirSync(directory);

@@ -87,7 +87,7 @@ export function Navbar() {
               className="hidden lg:inline-block"
             >
               <Button variant="blue" size="sm">
-                Visit Store
+                Online Store(India)
               </Button>
             </a>
 
@@ -182,7 +182,7 @@ export function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               <Button variant="blue" size="sm" className="w-full">
-                Visit Store
+                Online Store(India)
               </Button>
             </a>
           </div>
