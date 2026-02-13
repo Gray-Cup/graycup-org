@@ -68,7 +68,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             {/* Desktop buttons */}
             <Link
-              href="/contact"
+              href="https://b2b.graycup.in"
               className="hidden xl:inline-block"
               target="_blank"
               onClick={() => setMenuOpen(false)}
