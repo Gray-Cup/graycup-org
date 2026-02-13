@@ -5,7 +5,6 @@ export default function Footer() {
     { href: "/about", label: "About" },
     { href: "/products", label: "Products" },
     { href: "/contact", label: "Contact" },
-    { href: "/team", label: "Team" },
     { href: "/impressum", label: "Impressum" },
   ];
 
