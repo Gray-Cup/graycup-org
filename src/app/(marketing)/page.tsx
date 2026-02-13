@@ -116,7 +116,7 @@ export default function Home() {
                   Gray Cup creates sustainable, high-quality essentials for
                   everything that belongs in your cup.
                 </span>
-                Built on the idea of a{" "}
+                {" "}Built on the idea of a{" "}
                 <span className="font-medium">neutral cup</span>, sustainable,
                 balanced, and uncompromising in quality, Gray Cup focuses on
                 what truly matters.
