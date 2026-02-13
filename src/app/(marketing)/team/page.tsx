@@ -219,7 +219,7 @@ export default function TeamPage() {
             <Link href="/contact">
               <Button size="lg">Get in Touch</Button>
             </Link>
-            <Link href="/about-arjun">
+            <Link href="/about">
               <Button variant="outline" size="lg">
                 Learn More About Arjun
               </Button>

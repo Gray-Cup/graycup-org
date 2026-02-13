@@ -34,8 +34,8 @@ export function Navbar() {
               {[
                 ["Products", "/products"],
                 ["Newsroom", "/newsroom"],
-                ["Our Impact", "/impact"],
                 ["About", "/about"],
+                ["Team", "/team"],
               ].map(([label, href]) => (
                 <Link
                   key={href}
@@ -148,7 +148,7 @@ export function Navbar() {
             {[
               ["Products", "/products"],
               ["Newsroom", "/newsroom"],
-              ["Our Impact", "/impact"],
+              ["Team", "/team"],
               ["Social Responsibility", "/social-responsibility"],
               ["Careers", "/careers"],
               ["About", "/about"],

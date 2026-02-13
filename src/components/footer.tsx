@@ -5,6 +5,7 @@ export default function Footer() {
     { href: "/about", label: "About" },
     { href: "/products", label: "Products" },
     { href: "/contact", label: "Contact" },
+    { href: "/team", label: "Team" },
     { href: "/impressum", label: "Impressum" },
   ];
 
@@ -20,6 +21,8 @@ export default function Footer() {
     { href: "https://b2b.graycup.in/", label: "B2B Store" },
     { href: "https://graycup.in/", label: "Consumer Store" },
     { href: "https://status.graycup.org/", label: "Status" },
+    { href: "/sites", label: "Our Sites" },
+    { href: "/calculators", label: "Calculators" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ];
 
