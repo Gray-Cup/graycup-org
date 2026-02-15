@@ -40,7 +40,7 @@ export default function AboutPage() {
         </div>
 
         <div>
-          <p>
+          {/* <p>
             <span className="font-semibold">Legal Name</span>: Gray Cup
             Enterprises Private Limited
             <br />
@@ -54,7 +54,7 @@ export default function AboutPage() {
             <span className="font-semibold">GST</span>: 07AAMCG4985H1Z2
             <br />
             <span className="font-semibold">UPI ID</span>: graycup@kotak
-          </p>
+          </p> */}
 
           <h3 className="text-lg md:text-xl font-semibold text-neutral-800 mt-4 mb-2">
             Other Sites
