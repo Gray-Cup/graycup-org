@@ -75,9 +75,9 @@ export default function Home() {
                   >
                     <Button variant="default" size="sm">
                       Shop Products{" "}
-                      <kbd className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer">
+                      {/* <kbd className="max-sm:hidden font-medium text-[11px] px-1.5 py-0.5 rounded-sm border border-neutral-700 bg-neutral-800 cursor-pointer">
                         International
-                      </kbd>
+                      </kbd> */}
                     </Button>
                   </a>
                 </div>
