@@ -21,7 +21,7 @@ export default function Footer() {
     { href: "https://graycup.in/", label: "Consumer Store" },
     { href: "https://status.graycup.org/", label: "Status" },
     { href: "/sites", label: "Our Sites" },
-    { href: "/calculators", label: "Calculators" },
+    { href: "/future-of-coffee", label: "Future of Coffee" },
     { href: "/sitemap.xml", label: "Sitemap" },
   ];
 
