@@ -9,6 +9,11 @@ export const metadata: Metadata = {
     title: "Every Cup Has a Climate Story",
     description: "Climate change threatens 60% of coffee species. neutral Cup is building awareness and funding green corridors to protect India's threatened wildlife.",
     type: "website",
+    images: [
+      {
+        url: "/og/future-of-coffee.png",
+      },
+    ],
   },
 };
 
