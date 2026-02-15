@@ -2,12 +2,12 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "The Future of Coffee & Conservation | Gray Cup",
-  description: "Climate change threatens 60% of coffee species. Learn how Gray Cup connects your coffee to wildlife conservation, funding green corridors to protect India's endangered species.",
+  title: "The Future of Coffee & Conservation | neutral Cup",
+  description: "Climate change threatens 60% of coffee species. Learn how neutral Cup connects your coffee to wildlife conservation, funding green corridors to protect India's endangered species.",
   keywords: ["climate change", "coffee sustainability", "wildlife conservation", "endangered species", "green corridors", "IUCN Red List", "specialty coffee"],
   openGraph: {
     title: "Every Cup Has a Climate Story",
-    description: "Climate change threatens 60% of coffee species. Gray Cup is building awareness and funding green corridors to protect India's threatened wildlife.",
+    description: "Climate change threatens 60% of coffee species. neutral Cup is building awareness and funding green corridors to protect India's threatened wildlife.",
     type: "website",
   },
 };
@@ -44,28 +44,24 @@ export default function FutureOfCoffee() {
         </p>
 
         <p className="text-lg mb-6">
-          At <span className="font-semibold">Gray Cup</span>, we believe
+          At <span className="font-semibold">neutral Cup</span>, we believe
           every brew should tell a deeper story. Inspired by IUCN Red List data,
           our packaging highlights India's threatened wildlife to build awareness
           about their fragile status.
         </p>
-
-        <div className="border border-gray-200 rounded-xl p-6 space-y-4 mb-6">
-          <h3 className="text-xl font-semibold">Stronger the Coffee, Stronger Their Status</h3>
           <ul className="space-y-2">
             <li>
-              ☕ <span className="font-medium">Very Strong / Strong</span> — Critically Endangered species
+              - <span className="font-medium">Very Strong / Strong</span> — Critically Endangered species
             </li>
             <li>
-              ☕ <span className="font-medium">Medium</span> — Endangered species
+              - <span className="font-medium">Medium</span> — Endangered species
             </li>
             <li>
-              ☕ <span className="font-medium">Mild</span> — Vulnerable species
+              - <span className="font-medium">Mild</span> — Vulnerable species
             </li>
           </ul>
-        </div>
 
-        <p className="text-lg mb-6">
+        <p className="text-lg mt-4 mb-6">
           Climate projections show that nearly{" "}
           <span className="font-semibold">half of today's coffee-growing land</span>{" "}
           could become unsuitable by 2050, while almost{" "}
@@ -73,17 +69,15 @@ export default function FutureOfCoffee() {
           do not exist in protected areas at all.
         </p>
 
-        <div className="border border-gray-200 rounded-xl p-6 mb-6">
-          <h3 className="text-xl font-semibold mb-3">
+        <div className="bg-green-600  p-6 mb-6">
+          <h3 className="text-xl text-white font-semibold mb-3">
             Our Commitment: Building Green Corridors
           </h3>
-          <p className="mb-4">
+          <p className="mb-4 text-neutral-50">
             Every purchase you make helps fund the creation of{" "}
-            <span className="font-semibold">green corridors</span> —
-            connected natural habitats that allow wildlife to move safely,
-            maintain genetic diversity, and survive in a changing climate.
+            <span className="font-semibold">green corridors</span>.
           </p>
-          <p className="font-medium">
+          <p className="font-medium text-neutral-50">
             Your cup isn't just coffee. It's a step toward reconnecting forests
             and protecting species.
           </p>
