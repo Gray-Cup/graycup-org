@@ -142,7 +142,7 @@ export default function Home() {
             </div>
           </div>
 
-                <div className="mx-auto px-4 lg:px-6 py-10 max-w-6xl">
+                <div className="mx-auto px-4 lg:px-6 py-10 ">
         <div className="flex flex-col lg:flex-row gap-8 items-start">
 
           {/* Left: content */}
@@ -161,7 +161,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 max-w-4xl gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 max-w-6xl gap-3">
               {/* Card 1 */}
               <div className="bg-neutral-50 border border-neutral-200 rounded-lg p-4 flex gap-3 items-start">
                 <div className="w-8 h-8 rounded-md bg-green-100 flex items-center justify-center shrink-0">
