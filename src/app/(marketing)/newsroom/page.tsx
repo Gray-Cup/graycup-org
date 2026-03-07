@@ -2,6 +2,8 @@ import { getNewsroomPosts } from "@/lib/mdx";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export default async function NewsroomPage() {
   const posts = await getNewsroomPosts();
@@ -62,3 +64,10 @@ export default async function NewsroomPage() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: generateTitle("Gray Cup Newsroom"),
+  description: generateDescription(
+    "Read updates, announcements and insights from Gray Cup about sourcing, exports and retail for coffee, tea and spices."
+  ),
+};

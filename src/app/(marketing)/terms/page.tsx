@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | Gray Cup",
-  description: "Terms of Use for Gray Cup Enterprises Private Limited.",
+  title: generateTitle("Terms of Use"),
+  description: generateDescription(
+    "Terms of Use for Gray Cup Enterprises Private Limited including conditions for using our website, purchasing products and accessing services."
+  ),
 };
 
 export default function TermsOfUse() {

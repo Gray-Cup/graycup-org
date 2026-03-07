@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { EbayIcon, AmazonIcon, GrayCupIcon, EtsyIcon, MeeshoIcon, ShopsyIcon, TataCliqIcon } from "@/components/logos";
 import Image from "next/image";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Shop | GrayCup",
-  description:
-    "Shop GrayCup products on your preferred platform. Find us on our official store, Amazon, Etsy, and eBay.",
+  title: generateTitle("Shop Gray Cup Products"),
+  description: generateDescription(
+    "Shop Gray Cup products on your preferred platform. Find us on our official store, Amazon, Etsy, and eBay with international options for consumers and businesses."
+  ),
 };
 
 

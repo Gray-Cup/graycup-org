@@ -1,13 +1,18 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "The Future of Coffee & Conservation | neutral Cup",
-  description: "Climate change threatens 60% of coffee species. Learn how neutral Cup connects your coffee to wildlife conservation, funding green corridors to protect India's endangered species.",
+  title: generateTitle("The Future of Coffee & Conservation"),
+  description: generateDescription(
+    "Climate change threatens 60% of coffee species. Learn how Gray Cup connects your coffee to wildlife conservation, funding green corridors to protect India's endangered species."
+  ),
   keywords: ["climate change", "coffee sustainability", "wildlife conservation", "endangered species", "green corridors", "IUCN Red List", "specialty coffee"],
   openGraph: {
-    title: "Every Cup Has a Climate Story",
-    description: "Climate change threatens 60% of coffee species. neutral Cup is building awareness and funding green corridors to protect India's threatened wildlife.",
+    title: generateTitle("Every Cup Has a Climate Story"),
+    description: generateDescription(
+      "Climate change threatens 60% of coffee species. Gray Cup is building awareness and funding green corridors to protect India's threatened wildlife."
+    ),
     type: "website",
     images: [
       {

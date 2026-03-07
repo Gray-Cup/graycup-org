@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Gray Cup",
-  description: "Privacy Policy for Gray Cup Enterprises Private Limited.",
+  title: generateTitle("Privacy Policy"),
+  description: generateDescription(
+    "Read the Privacy Policy for Gray Cup Enterprises Private Limited covering data collection, usage, retention and security for customers and partners."
+  ),
 };
 
 export default function PrivacyPolicy() {

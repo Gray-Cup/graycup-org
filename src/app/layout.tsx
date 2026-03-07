@@ -9,6 +9,7 @@ import Script from "next/script";
 import IntercomChat from "@/components/IntercomChat";
 import { Analytics } from "@vercel/analytics/next";
 import { WhatsappWidget } from "@/components/whatsapp-widget";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 const fontSans = Inter({
   subsets: ["latin"],
@@ -42,9 +43,10 @@ const fontPublicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gray Cup",
-  description:
-    "We sell indian tea, coffee and matcha to people who care about quality.",
+  title: generateTitle("Gray Cup"),
+  description: generateDescription(
+    "We sell Indian tea, coffee and matcha to people who care about quality."
+  ),
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -69,9 +71,10 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Gray Cup",
-    description:
-      "We sell indian tea, coffee and matcha to people who care about quality.",
+    title: generateTitle("Gray Cup"),
+    description: generateDescription(
+      "We sell Indian tea, coffee and matcha to people who care about quality."
+    ),
     images: [
       {
         url: "https://graycup.org/og.png",
@@ -84,9 +87,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gray Cup",
-    description:
-      "We sell indian tea, coffee and matcha to people who care about quality.",
+    title: generateTitle("Gray Cup"),
+    description: generateDescription(
+      "We sell Indian tea, coffee and matcha to people who care about quality."
+    ),
     images: ["https://graycup.org/og.png"],
   },
 };

@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Our Sites | GrayCup",
-  description:
-    "Explore the informational websites owned and operated by GrayCup, focused on bulk chai, CTC tea education, and loose-leaf tea knowledge.",
+  title: generateTitle("Our Sites"),
+  description: generateDescription(
+    "Explore the informational websites owned and operated by Gray Cup, focused on bulk chai, CTC tea education, and loose-leaf tea knowledge."
+  ),
 };
 
 export default function SitesPage() {

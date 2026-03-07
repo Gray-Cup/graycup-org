@@ -9,6 +9,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/github-dark.css";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 interface NewsroomPostPageProps {
   params: Promise<{
@@ -31,18 +32,18 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Newsroom Post Not Found",
+      title: generateTitle("Newsroom Post Not Found"),
     };
   }
 
   return {
-    title: `${post.title} | Newsroom`,
-    description: post.description,
+    title: generateTitle(`${post.title} Newsroom Update`),
+    description: generateDescription(post.description),
     keywords: post.tags?.join(", "),
     authors: post.author ? [{ name: post.author }] : undefined,
     openGraph: {
-      title: post.title,
-      description: post.description,
+      title: generateTitle(post.title),
+      description: generateDescription(post.description),
       type: "article",
       publishedTime: post.date,
       authors: post.author ? [post.author] : undefined,
@@ -50,8 +51,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.description,
+      title: generateTitle(post.title),
+      description: generateDescription(post.description),
     },
   };
 }

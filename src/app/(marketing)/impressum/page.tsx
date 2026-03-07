@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Impressum | Gray Cup",
-  description: "Legal disclosure and company information for Gray Cup Enterprises Private Limited.",
+  title: generateTitle("Impressum"),
+  description: generateDescription(
+    "Legal disclosure and company information for Gray Cup Enterprises Private Limited including registration details, GST and contact information."
+  ),
 };
 
 export default function Impressum() {

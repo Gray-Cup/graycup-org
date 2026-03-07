@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Sales & Shipping Policy | Gray Cup",
-  description: "Sales and Shipping Policy for Gray Cup Enterprises Private Limited.",
+  title: generateTitle("Sales & Shipping Policy"),
+  description: generateDescription(
+    "Sales and Shipping Policy for Gray Cup Enterprises Private Limited including order processing, delivery timelines, international shipping and returns."
+  ),
 };
 
 export default function SalesShippingPolicy() {

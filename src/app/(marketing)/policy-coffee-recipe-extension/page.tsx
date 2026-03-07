@@ -1,8 +1,11 @@
 import { Metadata } from "next";
+import { generateTitle, generateDescription } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy of Coffee Recipe Extension ",
-  description: "This page is clearly for our coffee recipe extension which is available on chrome extensions store.",
+  title: generateTitle("Privacy Policy • Coffee Recipe Extension"),
+  description: generateDescription(
+    "Privacy details for Gray Cup's Coffee Recipe Chrome Extension, outlining data collection, local storage usage, remote content retrieval and contact information."
+  ),
 };
 
 export default function PrivacyPolicyChromeExt() {
