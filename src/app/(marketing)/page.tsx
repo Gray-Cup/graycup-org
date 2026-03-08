@@ -256,7 +256,7 @@ export default function Home() {
                 onClick={() => setTechDialogOpen(true)}
                 className="inline-flex cursor-pointer items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-700 transition-colors"
               >
-                Explore Tech Solutions
+                Request Tech Solutions
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
