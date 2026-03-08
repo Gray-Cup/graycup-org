@@ -1,9 +1,9 @@
 export function WhatsappWidget() {
   return (
     <a
-      href="https://whatsapp.com/"
+      href="https://api.whatsapp.com/send?phone=918527914317&text=Hey!"
       target="_blank"
-      className="fixed bottom-25 hover:shadow-lg rounded-full scale-121 cursor-pointer duration-200 right-8"
+      className="fixed bottom-10 hover:shadow-lg rounded-full scale-121 cursor-pointer duration-200 right-8"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

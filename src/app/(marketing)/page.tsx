@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Script from "next/script";
 import { CoffeeCup } from "@/components/svgs";
 import Image from "next/image";
+import { TechSolutionsDialog } from "@/components/tech-solutions-dialog";
 
 const whatWeDoItems = [
   {
@@ -117,6 +119,7 @@ const techCards = [
 ];
 
 export default function Home() {
+  const [techDialogOpen, setTechDialogOpen] = useState(false);
 
   return (
     <div>
@@ -249,16 +252,19 @@ export default function Home() {
             </div>
 
             <div className="mt-6">
-              <a href="/contact">
-                <button className="inline-flex cursor-pointer items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-700 transition-colors">
-                  Explore Tech Solutions
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </button>
-              </a>
+              <button
+                onClick={() => setTechDialogOpen(true)}
+                className="inline-flex cursor-pointer items-center gap-2 px-4 py-2 rounded-lg bg-neutral-900 text-white text-sm font-medium hover:bg-neutral-700 transition-colors"
+              >
+                Explore Tech Solutions
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
             </div>
           </div>
+
+          <TechSolutionsDialog open={techDialogOpen} onOpenChange={setTechDialogOpen} />
 
           <div className="my-20 flex flex-col md:items-center px-6 py-10 md:py-20 bg-neutral-50 md:grid md:grid-cols-[70%_30%]">
             <div>
