@@ -64,11 +64,13 @@ export default function Footer() {
             India under the Companies Act, 2013. Corporate Identification Number
             (CIN):{" "}
             <span className="whitespace-nowrap">U47211DL2025PTC457808</span>.
+            Registered Address: FF122, Rodeo Drive Mall, GT Road, TDI City,
+            Kundli, Sonipat, Haryana, 131030.
           </p>
 
           <p>
             GST Registration Number:{" "}
-            <span className="whitespace-nowrap">07AAMCG4985H1Z2</span>. Product
+            <span className="whitespace-nowrap">06AAMCG4985H1Z4</span>. Product
             availability, pricing, and specifications are subject to change
             without notice.
           </p>

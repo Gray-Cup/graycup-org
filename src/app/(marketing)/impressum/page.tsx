@@ -25,6 +25,9 @@ export default function Impressum() {
             <strong>Legal Name:</strong> Gray Cup Enterprises Private Limited
           </p>
           <p>
+            <strong>Registered Address:</strong> FF122, Rodeo Drive Mall, GT Road, TDI City, Kundli, Sonipat, Haryana, 131030
+          </p>
+          <p>
             <strong>Country:</strong> India / Bharat
           </p>
           <p>
@@ -46,7 +49,7 @@ export default function Impressum() {
           <p>
             <strong>GST Identification Number:</strong>{" "}
             <code className="bg-neutral-100 px-2 py-1 rounded text-sm">
-              07AAMCG4985H1Z2
+              06AAMCG4985H1Z4
             </code>
           </p>
         </div>

@@ -97,7 +97,7 @@ export default function SalesShippingPolicy() {
           otherwise specified.
         </p>
         <ul className="list-disc pl-6 mb-6 space-y-2">
-          <li>Prices include applicable GST (GST: 07AAMCG4985H1Z2).</li>
+          <li>Prices include applicable GST (GST: 06AAMCG4985H1Z4).</li>
           <li>
             We accept payments via UPI, credit/debit cards, net banking, and other payment methods as displayed at checkout.
           </li>
@@ -212,7 +212,7 @@ export default function SalesShippingPolicy() {
 
         <p className="text-sm text-muted-foreground mt-10">
           Gray Cup Enterprises Private Limited | CIN: U47211DL2025PTC457808 |
-          GST: 07AAMCG4985H1Z2
+          GST: 06AAMCG4985H1Z4
         </p>
       </div>
     </div>
