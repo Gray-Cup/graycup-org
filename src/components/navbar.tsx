@@ -34,6 +34,7 @@ export function Navbar() {
               {[
                 ["Products", "/products"],
                 ["Newsroom", "/newsroom"],
+                ["Sourcing/White Label", "/sourcing"],
                 ["About", "/about"],
               ].map(([label, href]) => (
                 <Link
@@ -147,6 +148,7 @@ export function Navbar() {
             {[
               ["Products", "/products"],
               ["Newsroom", "/newsroom"],
+              ["Sourcing/White Label", "/sourcing"],
               ["Social Responsibility", "/social-responsibility"],
               ["Careers", "/careers"],
               ["About", "/about"],
