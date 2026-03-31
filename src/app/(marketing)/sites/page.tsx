@@ -24,25 +24,17 @@ export default function SitesPage() {
       </header>
 
       {/* Cards Grid */}
-      <section className="grid gap-8 md:grid-cols-3">
+      <section className="grid gap-6 md:grid-cols-3">
         {/* BulkChai Card */}
-        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-gray-900">BulkChai</h2>
-          <p className="mt-3 text-gray-600">
-            BulkChai is an informational platform focused on bulk chai usage and
-            how chai is consumed at scale across cafés, offices, canteens, and
-            retail environments.
+        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-gray-900">BulkChai</h2>
+          <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+            Informational platform on bulk chai usage across cafés, offices,
+            canteens, and retail environments.
           </p>
-
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-600">
-            <li>Chai consumption at business scale</li>
-            <li>Operational considerations for bulk brewing</li>
-            <li>Common questions from bulk chai buyers</li>
-          </ul>
-
           <Link
             href="https://bulkchai.com"
-            className="mt-6 inline-block font-medium text-primary-600 hover:underline"
+            className="mt-4 inline-block text-sm font-medium text-primary-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -51,23 +43,15 @@ export default function SitesPage() {
         </div>
 
         {/* BulkCTC Card */}
-        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-gray-900">BulkCTC</h2>
-          <p className="mt-3 text-gray-600">
-            BulkCTC is dedicated to explaining CTC (Crush, Tear, Curl) tea —
-            including grades, particle size, colour output, and consistency in
-            bulk chai preparation.
+        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-gray-900">BulkCTC</h2>
+          <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+            Dedicated to explaining CTC tea — grades, particle size, colour
+            output, and consistency in bulk chai preparation.
           </p>
-
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-600">
-            <li>CTC tea grades and classification</li>
-            <li>Dust vs fannings vs leaf behaviour</li>
-            <li>Consistency and colour in bulk chai</li>
-          </ul>
-
           <Link
             href="https://bulkctc.com"
-            className="mt-6 inline-block font-medium text-primary-600 hover:underline"
+            className="mt-4 inline-block text-sm font-medium text-primary-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,26 +60,36 @@ export default function SitesPage() {
         </div>
 
         {/* PureCha Card */}
-        <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-gray-900">PureCha</h2>
-          <p className="mt-3 text-gray-600">
-            PureCha focuses on loose-leaf and orthodox tea education, helping
-            readers understand tea purity, processing methods, and leaf quality.
+        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-gray-900">PureCha</h2>
+          <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+            Loose-leaf and orthodox tea education — purity, processing methods,
+            and leaf quality explained.
           </p>
-
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-600">
-            <li>Loose-leaf and orthodox tea basics</li>
-            <li>Processing methods and flavour impact</li>
-            <li>Understanding tea beyond blends</li>
-          </ul>
-
           <Link
             href="https://purecha.in"
-            className="mt-6 inline-block font-medium text-primary-600 hover:underline"
+            className="mt-4 inline-block text-sm font-medium text-primary-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             Visit purecha.in →
+          </Link>
+        </div>
+
+        {/* GrayFarms Card */}
+        <div className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-gray-900">Gray Farms</h2>
+          <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+            A public directory of tea and coffee farms, built to bring
+            transparency to the supply chain and help growers get discovered.
+          </p>
+          <Link
+            href="https://grayfarms.in"
+            className="mt-4 inline-block text-sm font-medium text-primary-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit grayfarms.in →
           </Link>
         </div>
       </section>
