@@ -233,7 +233,7 @@ export default function PricingPage() {
               ref={frameRef}
               className="rounded-2xl max-md:max-w-sm max-md:mx-auto border border-gray-200 bg-white overflow-hidden"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-x divide-gray-200">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:divide-x divide-gray-200">
                 {tiers.map((t) => {
                   return (
                     <div key={t.name} className="relative">

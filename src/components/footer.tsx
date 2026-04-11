@@ -123,7 +123,7 @@ export default function Footer() {
             rights reserved.
           </p>
 
-          <nav className="flex items-center gap-x-6">
+          <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {resourceLinks.map((link) => (
               <Link
                 key={link.href}
