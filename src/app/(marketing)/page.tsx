@@ -6,6 +6,7 @@ import Script from "next/script";
 import { CoffeeCup } from "@/components/svgs";
 import Image from "next/image";
 import { TechSolutionsDialog } from "@/components/tech-solutions-dialog";
+import { ExternalLink } from "lucide-react";
 
 const whatWeDoItems = [
   {
@@ -118,6 +119,16 @@ const techCards = [
   },
 ];
 
+const initiatives = [
+  {
+    image: "/grayfarms.webp",
+    title: "Gray Farms",
+    description: "Find tea and coffee farms of India",
+    href: "https://grayfarms.in",
+    external: true,
+  },
+];
+
 export default function Home() {
   const [techDialogOpen, setTechDialogOpen] = useState(false);
 
@@ -188,6 +199,46 @@ export default function Home() {
           <div className="my-20 py-20 bg-neutral-100">
             <h2 className="text-5xl font-medium text-neutral-900 mb-6 flex justify-center flex-row items-center gap-4 font-instrument-sans"></h2>
           </div>
+
+
+          <section className="py-14 px-6">
+
+            <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl font-medium text-neutral-900 mb-6">
+                Our Initiatives
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                {initiatives.map((initiative) => (
+                  <div
+                    key={initiative.title}
+                    className="flex flex-col"
+                  >
+                    <div className="overflow-hidden rounded-md mb-5">
+                      <img
+                        src={initiative.image}
+                        alt={initiative.title}
+                        className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <h3 className="text-xl font-medium text-neutral-900 mb-0.75">
+                      {initiative.title}
+                    </h3>
+                    <p className="text-sm text-neutral-500 leading-relaxed mb-4 flex-grow">
+                      {initiative.description}
+                    </p>
+                    <a
+                      href={initiative.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex bg-black text-white max-w-fit px-4 py-2 rounded-md items-center gap-2 text-sm font-medium hover:text-neutral-100 hover:bg-neutral-800 transition-colors"
+                    >
+                      Visit {initiative.title}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
 
           {/* Sourcing & Retail Identity */}
           <div className="my-10 px-6 py-12">
