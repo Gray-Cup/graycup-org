@@ -97,7 +97,7 @@ const tiers: Tier[] = [
     description: "If we miss your call, we'll call you back.",
     cta: "Call Now",
     ctaVariant: "blue",
-    features: ["+91 000-work-in-progress"],
+    features: ["+91 8527914317"],
   },
 ];
 
