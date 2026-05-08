@@ -51,8 +51,7 @@ export function Navbar() {
             <p className="opacity-20 hidden lg:block">|</p>
             <nav className="hidden lg:flex text-sm font-medium">
               {[
-                ["Social Responsibility", "/social-responsibility"],
-                ["Careers", "/careers"],
+                ["Social Responsibility", "/social-responsibility"]
               ].map(([label, href]) => (
                 <Link
                   key={href}
@@ -87,7 +86,18 @@ export function Navbar() {
               className="hidden lg:inline-block"
             >
               <Button variant="blue" size="sm">
-                Online Store(India)
+                Online Store
+              </Button>
+            </a>
+                        <a
+              id="fast-store-link"
+              href="https://fast.graycup.in/"
+              target="_blank"
+              rel="noopener"
+              className="hidden lg:inline-block"
+            >
+              <Button variant="red" size="sm">
+                Fast Store
               </Button>
             </a>
 
@@ -150,7 +160,6 @@ export function Navbar() {
               ["Newsroom", "/newsroom"],
               ["Sourcing/White Label", "/sourcing"],
               ["Social Responsibility", "/social-responsibility"],
-              ["Careers", "/careers"],
               ["About", "/about"],
             ].map(([label, href]) => (
               <Link
@@ -182,7 +191,18 @@ export function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               <Button variant="blue" size="sm" className="w-full">
-                Online Store(India)
+                Online Store
+              </Button>
+            </a>
+            <a
+              id="fast-store-link"
+              href="https://fast.graycup.in/"
+              target="_blank"
+              rel="noopener"
+              className="hidden lg:inline-block"
+            >
+              <Button variant="red" size="sm">
+                Fast Store
               </Button>
             </a>
           </div>
