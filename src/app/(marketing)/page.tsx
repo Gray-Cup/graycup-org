@@ -127,6 +127,13 @@ const initiatives = [
     href: "https://grayfarms.in",
     external: true,
   },
+  {
+    image: "/opend2c.webp",
+    title: "OpenD2C",
+    description: "An Open & Free Marketplace for D2C Brands.",
+    href: "https://opend2c.com",
+    external: true,
+  }
 ];
 
 export default function Home() {
