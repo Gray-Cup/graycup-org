@@ -133,6 +133,13 @@ const initiatives = [
     description: "An Open & Free Marketplace for D2C Brands.",
     href: "https://opend2c.com",
     external: true,
+  },
+    {
+    image: "/softwarize.png",
+    title: "Softwarize",
+    description: "A Software Development Branch of Gray Cup.",
+    href: "https://softwarize.graycup.org",
+    external: true,
   }
 ];
 
